@@ -29,3 +29,16 @@ This is some descriptive text.
 
 ![Updated data from most recent refresh.](/Users/jeremyspater/Dropbox/duke/methods/py4fi14nov23/scripts/positions_prices.png)
 
+For the most recent day of trading, the performance of the SMA strategy (and, for comparison, the buy-and-hold strategy), the volatility of the SMA strategy, and the number of trades are given below.
+
+```{r performance, include=TRUE}
+todays_performance = readRDS('/Users/jeremyspater/Dropbox/duke/methods/py4fi14nov23/scripts/todays_performance.RDS')
+
+print(paste('Date:', todays_performance$date))
+print(paste('SMA Returns:', todays_performance$returns))
+print(paste('Buy-and-Hold Returns:', todays_performance$long_returns))
+print(paste('SMA Volatility:', todays_performance$volatility))
+print(paste('SMA Trades:', todays_performance$trades))
+      
+```
+
