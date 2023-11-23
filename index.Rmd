@@ -25,7 +25,7 @@ s = function(x){summary(factor(x))}
 
 ### FTSE average
 
-This is some descriptive text.
+This plot shows the short- (in blue) and long-term (in red) moving averages. The gray line shows the strategy's position (short or long).
 
 ![Updated data from most recent refresh.](/Users/jeremyspater/Dropbox/duke/methods/py4fi14nov23/scripts/positions_prices.png)
 
