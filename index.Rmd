@@ -1,0 +1,31 @@
+---
+title: "Simple Moving Average trades"
+output:
+  html_document:
+    code_folding: hide
+---
+
+```{r setup, include=FALSE}
+
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(warning = FALSE, message = FALSE)  #quick and dirty way to suppress warnings
+#Preamble from 9-10-19 website plots
+library(ggplot2)
+library(tidyr)
+library(plyr);library(dplyr, warn.conflicts = F)
+#library(tictoc)
+#library(stargazer)
+#library(e1071) #gives skewness, kurtosis
+rm(list=ls())
+s = function(x){summary(factor(x))}
+####################################################################################################
+```
+
+## Trading strategy with minute-interval data
+
+### FTSE average
+
+This is some descriptive text.
+
+![Updated data from most recent refresh.](/Users/jeremyspater/Dropbox/duke/methods/py4fi14nov23/scripts/positions_prices.png)
+
